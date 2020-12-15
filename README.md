@@ -1,70 +1,52 @@
-# Getting Started with Create React App
+# tilllate internship project :
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+----------
 
-## Available Scripts
+### Overview :
 
-In the project directory, you can run:
+this project is a simple image gallery of imgs provided from json.placeholder API, with simple requirment which is take the 1st img only from every album with an even id.show just 10 imgs, add load more button to load more 10, using Material ui, axios "to fetch the api" and so more fun and custom functionality along with react's ones.
 
-### `yarn start`
+----------
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Satisfied requirements :
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- ~~set up react project~~
+- ~~ use Material UI Framework for the UI components ~~
+- ~~ create image gallery ~~
+- ~~ use: https://jsonplaceholder.typicode.com/photos API to get images for gallery ~~
+- ~~ Make the gallery responsive so that in Desktop it will show 3 items per row, 2 in table and 1 on small devices ~~
+- ~~ Only take the 1st image of each album with an even ID, so i end up with 50 image as required ~~
+- ~~ The album should only show the first 10 pictures, and a Show More button should allow to show 10 more, and so on up to 50 ~~
 
-### `yarn test`
+----------
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Walk through :
 
-### `yarn build`
+- Installation :
+  - install react
+  - install Material ui
+  - install axios
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Design :
+    - create ButtonAppBar component (simple nav bar) using material ui, import it in App
+    - used Container{lg}, Grid for responsive design (gallery grid 3 2 1)
+    - used Paper to show image
+    - Button for Show more button
+    - used makeStyles hook to create css styles
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Logic :
+    - fetch images from api (using axios), once the component did mount (using useEffect hook)
+    - filtring images to get images with even albumId only ( .filter())
+    - group images with the same albumId (used custom reducer func : " groupByAlbumId() ")
+    - take the 1st image from each album with even id, by looping around the grouped albums i created before than take the 1st image from each album
+    - slice images by 'visileImages state' (default 10) to render only 10 at the first render.
+    - Show More button allow to show 10 more, and so on up to 50 (not visible if visible imgs < 50, and isLoading === false)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+----------
 
-### `yarn eject`
+##### Unsatisfied requirements :
+- using TypeScript
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

@@ -91,13 +91,13 @@ function App() {
                     </Grid>
           ))}
 
-        {/* render the button only if the visible img are less than 50, and isLoading = false */}
+        {/* render the button only if the visible img are less than 50, and isLoading === false */}
         {visibleImages < 50 && !isLoading && (
         <Grid item sm={12} md={12} lg={12} xl={12}>
           <Button variant="contained" color="primary"
           onClick={onloadMore}
           >
-             Load more
+             Show more
              </Button>
         </Grid>
         )}
