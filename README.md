@@ -11,12 +11,12 @@ this project is a simple image gallery of imgs provided from json.placeholder AP
 ### Satisfied requirements :
 
 - ~~set up react project~~
-- ~~ use Material UI Framework for the UI components ~~
-- ~~ create image gallery ~~
-- ~~ use: https://jsonplaceholder.typicode.com/photos API to get images for gallery ~~
-- ~~ Make the gallery responsive so that in Desktop it will show 3 items per row, 2 in table and 1 on small devices ~~
-- ~~ Only take the 1st image of each album with an even ID, so i end up with 50 image as required ~~
-- ~~ The album should only show the first 10 pictures, and a Show More button should allow to show 10 more, and so on up to 50 ~~
+- ~~use Material UI Framework for the UI components~~
+- ~~create image gallery~~
+- ~~use: https://jsonplaceholder.typicode.com/photos API to get images for gallery~~
+- ~~Make the gallery responsive so that in Desktop it will show 3 items per row, 2 in table and 1 on small devices~~
+- ~~Only take the 1st image of each album with an even ID, so i end up with 50 image as required~~
+- ~~The album should only show the first 10 pictures, and a Show More button should allow to show 10 more, and so on up to 50~~
 
 ----------
 
