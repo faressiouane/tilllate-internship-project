@@ -47,6 +47,9 @@ this project is a simple image gallery of imgs provided from json.placeholder AP
 ##### Unsatisfied requirements :
 - using TypeScript
 
+----------
 
+##### Preview :
+![image](public/preview.png)
 
 
