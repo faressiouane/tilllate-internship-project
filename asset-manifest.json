@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/tilllate-internship-project/static/css/main.6dea0f05.chunk.css",
+    "main.js": "/tilllate-internship-project/static/js/main.bb865f24.chunk.js",
+    "main.js.map": "/tilllate-internship-project/static/js/main.bb865f24.chunk.js.map",
+    "runtime-main.js": "/tilllate-internship-project/static/js/runtime-main.54ead07a.js",
+    "runtime-main.js.map": "/tilllate-internship-project/static/js/runtime-main.54ead07a.js.map",
+    "static/js/2.aee933d3.chunk.js": "/tilllate-internship-project/static/js/2.aee933d3.chunk.js",
+    "static/js/2.aee933d3.chunk.js.map": "/tilllate-internship-project/static/js/2.aee933d3.chunk.js.map",
+    "static/js/3.5532b8cb.chunk.js": "/tilllate-internship-project/static/js/3.5532b8cb.chunk.js",
+    "static/js/3.5532b8cb.chunk.js.map": "/tilllate-internship-project/static/js/3.5532b8cb.chunk.js.map",
+    "index.html": "/tilllate-internship-project/index.html",
+    "static/css/main.6dea0f05.chunk.css.map": "/tilllate-internship-project/static/css/main.6dea0f05.chunk.css.map",
+    "static/js/2.aee933d3.chunk.js.LICENSE.txt": "/tilllate-internship-project/static/js/2.aee933d3.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.54ead07a.js",
+    "static/js/2.aee933d3.chunk.js",
+    "static/css/main.6dea0f05.chunk.css",
+    "static/js/main.bb865f24.chunk.js"
+  ]
+}
